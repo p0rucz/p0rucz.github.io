@@ -1,0 +1,89 @@
+site_name: Porucz Docs
+docs_dir: docs
+site_author: Porucz
+site_url: "https://p0rucz.github.io"
+repo_url: "https://github.com/p0rucz/p0rucz.github.io"
+repo_name: "porucz/docs"
+theme:
+  #custom_dir: overrides
+  font:
+    text: Ubuntu
+    code: JetBrains Mono
+  name: material
+  logo: assets/images/site/sushi.png
+  favicon: assets/images/site/sushi.png
+  features:
+  - navigation.tabs
+  - navigation.path
+  - navigation.top
+  - navigation.footer
+  - search
+  - search.suggest
+  - search highlight
+  - content.tabs.links 
+  - content.code.annotation
+  - content.code.copy
+  - blog
+  languaje: es
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+      primary: black
+      accent: indigo
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: black
+      accent: indigo
+
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      linenums: true
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid 
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.keys
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - tables
+
+plugins:
+  - blog
+  - tags
+  - search
+  - offline
+  - git-revision-date-localized:
+      enable_creation_date: true
+      fallback_to_build_date: true
+
+
+extra:
+  font:
+    icons:
+      - material
+      - fontawesome
+  social:
+    - icon: simple/gitlab
+      link: https://github.com/p0rucz
+copyright: CC BY-NC-SA &copy; 2026 PRC
