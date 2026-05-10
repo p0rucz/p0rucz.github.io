@@ -3,7 +3,7 @@ docs_dir: docs
 site_author: Porucz
 site_url: "https://p0rucz.github.io"
 repo_url: "https://github.com/p0rucz/p0rucz.github.io"
-repo_name: "porucz/docs"
+repo_name: "p0rucz/p0rucz.github.io"
 theme:
   #custom_dir: overrides
   font:
