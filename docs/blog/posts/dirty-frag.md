@@ -1,5 +1,5 @@
 ---
-title: Dirty Frag CVE-2026-31431.
+title: Dirty Frag CVE-2026-43284.
 authors: 
     - porucz 
 date:
@@ -21,6 +21,8 @@ El fallo reside en la gestión de los fragmentos de paquetes de red IPv6. Cuando
 - El Problema: El kernel no valida correctamente los límites de memoria al reensamblar estos fragmentos.
 - El Ataque: Un atacante puede enviar paquetes malformados que "engañan" al sistema.
 - La Consecuencia: Se produce un desbordamiento de búfer (Buffer Overflow) en el heap del kernel.
+
+<!-- more -->
 
 ## ¿Por qué es peligrosa?
 
